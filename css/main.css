@@ -1,0 +1,91 @@
+/* Main CSS - Imports all modular components */
+
+/* Critical CSS - Load immediately */
+@import url('critical.css');
+
+/* Component CSS - Load after critical */
+@import url('navigation.css');
+@import url('buttons.css');
+@import url('hero.css');
+@import url('content-sections.css');
+
+/* Non-critical CSS - Load lazily */
+@import url('non-critical.css');
+
+/* ===== LEGACY CLASS COMPATIBILITY ===== */
+/* Maintain compatibility with existing HTML class names */
+
+/* Grid compatibility */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Steps compatibility */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+}
+
+.step {
+  text-align: left;
+  padding: var(--spacing-xl);
+}
+
+/* Header divider compatibility */
+.header-divider {
+  display: none;
+}
+
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+/* Optimize for paint and layout */
+.nav-links,
+.hamburger-box span,
+.mobile-cta,
+.nav-links.open .nav-link-blue {
+  will-change: transform, opacity;
+}
+
+/* ===== ACCESSIBILITY ENHANCEMENTS ===== */
+/* Ensure focus indicators are visible */
+.nav-link-blue:focus-visible,
+.desktop-link:focus-visible,
+.cta-button:focus-visible,
+.mobile-cta:focus-visible,
+.hamburger:focus-visible,
+.close-nav:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  .header,
+  .nav,
+  .hamburger,
+  .mobile-cta,
+  .nav-links {
+    display: none !important;
+  }
+  
+  .hero,
+  .section {
+    padding: 1rem 0;
+  }
+  
+  .cta-button {
+    background: var(--text-primary) !important;
+    color: white !important;
+    border: 1px solid var(--text-primary) !important;
+  }
+} 

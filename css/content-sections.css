@@ -1,0 +1,146 @@
+/* Content Sections Component Styles */
+
+/* ===== SECTION BASE STYLES ===== */
+.section {
+  padding: var(--spacing-3xl) 0;
+  background: var(--background);
+}
+
+.section .container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding-left: var(--section-padding-x);
+  padding-right: var(--section-padding-x);
+}
+
+.section-title {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: var(--spacing-2xl);
+  color: var(--text-primary);
+}
+
+/* ===== PROBLEM & SOLUTION SECTION ===== */
+.problem-solution {
+  background: var(--background);
+}
+
+.problem h3,
+.solution h3 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.problem ul,
+.solution ul {
+  list-style: none;
+  padding: 0;
+}
+
+.problem li,
+.solution li {
+  padding: var(--spacing-sm) 0;
+  position: relative;
+  padding-left: var(--spacing-lg);
+}
+
+.problem li::before {
+  content: "✗";
+  color: #ef4444;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.solution li::before {
+  content: "✓";
+  color: #10b981;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* ===== FEATURES SECTION ===== */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+}
+
+.feature-card {
+  background: var(--background);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 6px var(--shadow-light);
+  text-align: left;
+  transition: transform var(--transition-base);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 var(--spacing-md) 0;
+  color: white;
+  font-size: var(--font-size-2xl);
+}
+
+.feature-card h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+/* ===== ONBOARDING SECTION ===== */
+.onboarding {
+  background: var(--background);
+}
+
+.onboarding-step {
+  text-align: left;
+  padding: var(--spacing-xl);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 var(--spacing-md) 0;
+  font-weight: bold;
+  font-size: var(--font-size-xl);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (min-width: 768px) {
+  .section-title {
+    font-size: var(--font-size-4xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: var(--font-size-4xl);
+  }
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-size: var(--font-size-3xl);
+  }
+} 
