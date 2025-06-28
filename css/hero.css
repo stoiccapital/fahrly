@@ -19,7 +19,7 @@
 @media (min-width: 769px) {
   .hero .container {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: var(--spacing-2xl);
   }
@@ -31,8 +31,9 @@
     flex: 1 1 0;
     max-width: 50%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    margin-top: 0;
   }
 }
 
@@ -113,4 +114,65 @@
   max-width: 100%;
   min-width: 0;
   display: block;
+}
+
+/* ===== TRUSTED BRANDS SECTION ===== */
+.trusted-brands {
+  margin-top: var(--spacing-2xl);
+  text-align: center;
+}
+
+.brands-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+  font-weight: 500;
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.brand-logo {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.8);
+  transition: all var(--transition-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+}
+
+.brand-logo:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.1);
+}
+
+/* Mobile responsive for brands */
+@media (max-width: 768px) {
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+  
+  .brand-logo {
+    font-size: var(--font-size-base);
+    min-height: 40px;
+    padding: var(--spacing-xs);
+  }
+  
+  .brands-subtitle {
+    font-size: var(--font-size-xs);
+    margin-bottom: var(--spacing-md);
+  }
 } 
