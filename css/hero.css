@@ -85,12 +85,12 @@
 
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: var(--font-size-xl);
+    font-size: 2rem;
     line-height: 1.1;
   }
   
   .hero p {
-    font-size: var(--font-size-sm);
+    font-size: 0.8rem;
     line-height: 1.3;
   }
 }
