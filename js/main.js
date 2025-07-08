@@ -329,3 +329,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 }); 
+
+// Pricing Toggle Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const pricingToggles = document.querySelectorAll('.pricing-toggle');
+    
+    pricingToggles.forEach(toggle => {
+        const options = toggle.querySelectorAll('.price-option');
+        
+        options.forEach(option => {
+            option.addEventListener('click', () => {
+                // Remove active class from all options
+                options.forEach(opt => opt.classList.remove('active'));
+                // Add active class to clicked option
+                option.classList.add('active');
+            });
+        });
+    });
+}); 

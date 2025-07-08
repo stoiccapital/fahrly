@@ -2,10 +2,10 @@
 
 /* ===== HERO SECTION ===== */
 .hero {
-  padding-top: calc(var(--nav-height) + var(--spacing-xl));
-  padding-bottom: var(--spacing-3xl);
-  background: var(--background);
-  color: var(--text-primary);
+    padding: 6rem 0;
+    background: linear-gradient(to bottom, #ffffff, #f9fafb);
+    overflow: hidden;
+    position: relative;
 }
 
 .hero .container {
@@ -44,31 +44,25 @@
 }
 
 .hero-content {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 100%;
+    max-width: 70%;
+    text-align: left;
 }
 
 .hero h1 {
-  font-size: var(--font-size-4xl);
-  font-weight: 700;
-  margin-bottom: var(--spacing-sm);
-  line-height: 1.2;
-  color: var(--text-primary);
-  text-align: left;
-  white-space: normal;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    text-align: left;
 }
 
 .hero p {
-  font-size: var(--font-size-xl);
-  margin-bottom: var(--spacing-xl);
-  color: var(--text-secondary);
-  text-align: left;
-  white-space: normal;
-  line-height: 1.4;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 2rem;
+    text-align: left;
 }
 
 /* Mobile font sizes to maintain text structure */
@@ -116,63 +110,78 @@
   display: block;
 }
 
+.email-signup {
+    margin-left: 0;
+    margin-right: auto;
+}
+
 /* ===== TRUSTED BRANDS SECTION ===== */
 .trusted-brands {
-  margin-top: var(--spacing-2xl);
-  text-align: center;
+    margin-top: 4rem;
+    text-align: left;
+    max-width: 70%;
 }
 
 .brands-subtitle {
-  font-size: var(--font-size-sm);
-  color: var(--text-secondary);
-  margin-bottom: var(--spacing-lg);
-  font-weight: 500;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: left;
 }
 
 .brands-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--spacing-xl);
-  align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    gap: 2rem;
+    align-items: center;
 }
 
 .brand-logo {
-  font-size: var(--font-size-lg);
-  font-weight: 600;
-  color: var(--text-secondary);
-  padding: var(--spacing-sm);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.8);
-  transition: all var(--transition-base);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 50px;
+    color: #9ca3af;
+    font-weight: 500;
 }
 
-.brand-logo:hover {
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.1);
-}
-
-/* Mobile responsive for brands */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .brands-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-lg);
-  }
-  
-  .brand-logo {
-    font-size: var(--font-size-base);
-    min-height: 40px;
-    padding: var(--spacing-xs);
-  }
-  
-  .brands-subtitle {
-    font-size: var(--font-size-xs);
-    margin-bottom: var(--spacing-md);
-  }
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .trusted-brands {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.125rem;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
 } 
