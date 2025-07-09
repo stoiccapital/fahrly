@@ -347,3 +347,59 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 }); 
+
+// Mobile Menu Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const overlay = document.querySelector('.mobile-menu-overlay');
+    const closeButton = document.querySelector('.mobile-menu-close');
+    
+    // Toggle mobile menu
+    function toggleMobileMenu() {
+        mobileMenu.classList.toggle('active');
+        overlay.classList.toggle('active');
+        hamburgerMenu.setAttribute('aria-expanded', 
+            hamburgerMenu.getAttribute('aria-expanded') === 'false' ? 'true' : 'false'
+        );
+    }
+
+    // Close mobile menu
+    function closeMobileMenu() {
+        mobileMenu.classList.remove('active');
+        overlay.classList.remove('active');
+        hamburgerMenu.setAttribute('aria-expanded', 'false');
+    }
+
+    // Event listeners
+    hamburgerMenu.addEventListener('click', toggleMobileMenu);
+    overlay.addEventListener('click', closeMobileMenu);
+    closeButton.addEventListener('click', closeMobileMenu);
+
+    // Close menu when clicking a link
+    const mobileLinks = document.querySelectorAll('.mobile-menu-links a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Close menu on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+            closeMobileMenu();
+        }
+    });
+
+    // Header scroll effect
+    const header = document.querySelector('.header');
+    const mobileNavBar = document.querySelector('.mobile-nav-bar');
+    
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+            mobileNavBar.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+            mobileNavBar.classList.remove('scrolled');
+        }
+    });
+}); 

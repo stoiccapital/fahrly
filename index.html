@@ -29,54 +29,49 @@
     <link rel="preload" href="css/main.css" as="style">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Navigation -->
     <header class="header">
-        <div class="container">
+        <!-- Desktop Navigation -->
+        <div class="container desktop-nav">
             <nav class="nav">
                 <a href="#" class="logo">Fahrly</a>
                 <div class="nav-left">
                     <a href="#features" class="nav-link-blue desktop-link">Produkte</a>
                     <a href="#pricing" class="nav-link-blue desktop-link">Preise</a>
+                    <a href="tools.html" class="nav-link-blue desktop-link">Tools</a>
                 </div>
                 <div class="nav-right">
                     <a href="#contact" class="nav-link-blue desktop-link nav-link-sales">Sales-Team kontaktieren</a>
                     <a href="#pricing" class="nav-link-blue desktop-link">Anmelden</a>
                 </div>
-                <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
-                  <span class="hamburger-box">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </span>
-                </button>
             </nav>
-            <div class="header-divider"></div>
         </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav-bar">
+            <a href="#" class="mobile-logo">Fahrly</a>
+            <button class="hamburger-menu" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="mobile-menu-close" aria-label="Menü schließen"></button>
+            <div class="mobile-menu-links">
+                <a href="#features">Produkte</a>
+                <a href="#pricing">Preise</a>
+                <a href="tools.html">Tools</a>
+                <a href="#contact" class="nav-link-sales">Sales-Team kontaktieren</a>
+                <a href="#pricing">Anmelden</a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay"></div>
     </header>
-    
-    <!-- Mobile Navigation Bar (full width, with border) -->
-    <div class="mobile-nav-bar">
-      <a href="#" class="mobile-logo">Fahrly</a>
-      <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
-        <span class="hamburger-box">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </button>
-    </div>
-    
-    <div class="nav-links" id="mobile-menu" role="navigation" aria-label="Mobile Navigation">
-      <div class="nav-links-topbar">
-        <button class="close-nav" aria-label="Menü schließen" aria-expanded="true">&times;</button>
-      </div>
-      <div class="nav-links-inner">
-        <a href="#features" class="nav-link-blue">Produkte</a>
-        <a href="#pricing" class="nav-link-blue">Preise</a>
-        <a href="#contact" class="nav-link-blue nav-link-sales">Sales-Team kontaktieren</a>
-      </div>
-      <button class="cta-button mobile-cta">Jetzt anmelden</button>
-    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -95,7 +90,7 @@ für Mietwagen Unternehmer in Deutschland,<br>
                 <form class="email-signup fade-in">
                     <div class="email-input-group">
                         <input type="email" placeholder="Ihre E-Mail-Adresse" required>
-                        <button type="submit" class="cta-button primary">
+                        <button type="submit" class="cta-button">
                             <span>Kostenlos testen</span>
                             <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -133,7 +128,6 @@ für Mietwagen Unternehmer in Deutschland,<br>
                 <div class="problem">
                     <h3>Die Herausforderungen</h3>
                     <ul>
-                        <li>Stress mit manueller Fahrtenannahme</li>
                         <li>Schlechte Übersicht über Fahrzeugauslastung</li>
                         <li>Komplizierte Gehaltsabrechnung für Fahrer</li>
                         <li>Zeitaufwändige Tagesreports</li>
@@ -143,7 +137,6 @@ für Mietwagen Unternehmer in Deutschland,<br>
                 <div class="solution">
                     <h3>Die Fahrly-Lösung</h3>
                     <ul>
-                        <li>Automatische Fahrtenzuweisung</li>
                         <li>Echtzeit-Flottenübersicht</li>
                         <li>Automatisierte Gehaltsabrechnung</li>
                         <li>Detaillierte Tagesreports</li>
@@ -327,10 +320,11 @@ für Mietwagen Unternehmer in Deutschland,<br>
                     <p>Professionelle Flottenmanagement Software für Mietwagen Unternehmer im DACH-Raum.</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Produkt</h3>
+                    <h4>Produkte</h4>
                     <a href="#features">Features</a>
                     <a href="#pricing">Preise</a>
                     <a href="#onboarding">Onboarding</a>
+                    <a href="tools.html">Tools</a>
                 </div>
                 <div class="footer-section">
                     <h3>Unternehmen</h3>

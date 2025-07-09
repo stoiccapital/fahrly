@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrly - Gehaltsrechner</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="tools.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Fahrly</a>
+                <div class="nav-left">
+                    <a href="index.html#features" class="nav-link-blue desktop-link">Produkte</a>
+                    <a href="index.html#pricing" class="nav-link-blue desktop-link">Preise</a>
+                    <a href="tools.html" class="nav-link-blue desktop-link">Tools</a>
+                </div>
+                <div class="nav-right">
+                    <a href="index.html#contact" class="nav-link-blue desktop-link nav-link-sales">Sales-Team kontaktieren</a>
+                    <a href="index.html#pricing" class="nav-link-blue desktop-link">Anmelden</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav-bar">
+        <a href="index.html" class="mobile-logo">Fahrly</a>
+        <button class="hamburger-menu" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- Mobile Menu Panel -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu-close" aria-label="Menü schließen"></button>
+        <div class="mobile-menu-links">
+            <a href="index.html#features">Produkte</a>
+            <a href="index.html#pricing">Preise</a>
+            <a href="tools.html">Tools</a>
+            <a href="index.html#contact" class="nav-link-sales">Sales-Team kontaktieren</a>
+            <a href="index.html#pricing">Anmelden</a>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+
+    <!-- Main Content -->
+    <main class="section-container">
+        <div class="section-content">
+            <div class="section-header fade-in">
+                <h1 class="section-title">Gehaltsrechner</h1>
+                <p class="section-description">Berechnen Sie schnell und einfach die Gehälter Ihrer Fahrer basierend auf Umsatz und individuellen Einstellungen. Laden Sie Ihre CSV-Datei hoch und erhalten Sie sofort eine detaillierte Übersicht.</p>
+                <div class="header-stats">
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Genauigkeit</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">< 1min</span>
+                        <span class="stat-label">Bearbeitungszeit</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">DSGVO</span>
+                        <span class="stat-label">Konform</span>
+                    </div>
+                </div>
+            </div>
+            <form id="calculator-form" class="calculator-form card p-lg rounded-lg shadow-md fade-in">
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label for="csv-file">CSV-Datei hochladen</label>
+                        <div class="file-drop-zone" id="drop-zone">
+                            <div class="drop-zone-content">
+                                <div class="drop-zone-icon"></div>
+                                <span class="drop-zone-text">CSV-Datei hier ablegen</span>
+                                <span class="drop-zone-hint">oder klicken zum Auswählen</span>
+                            </div>
+                            <input type="file" id="csv-file" accept=".csv" required>
+                        </div>
+                        <p class="info-text">Wählen Sie die CSV-Datei mit den Fahrerdaten aus</p>
+                        <div id="file-error" class="error-message"></div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="revenue-percentage">Umsatzanteil (%)</label>
+                            <input type="number" id="revenue-percentage" min="0" max="100" step="0.1" required class="rounded-md">
+                            <p class="info-text">Geben Sie den Prozentsatz des Umsatzes an</p>
+                        </div>
+
+                        <div class="checkbox-options">
+                            <div class="input-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="cash-handling" class="checkbox-input">
+                                    <span class="checkbox-text">Fahrer behält Bargeld</span>
+                                </label>
+                            </div>
+
+                            <div class="input-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="tax-calculation" class="checkbox-input">
+                                    <span class="checkbox-text">Mit 19% Mehrwertsteuer</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="cta-button w-full">Berechnen</button>
+            </form>
+
+            <div class="results fade-in mt-xl" id="results">
+                <h3 class="text-xl font-bold mb-md">Ergebnisse</h3>
+                <div class="result-table-wrapper card rounded-lg shadow-md">
+                    <table class="result-table w-full">
+                        <thead>
+                            <tr>
+                                <th>Fahrer</th>
+                                <th>Gesamtumsatz</th>
+                                <th>Gesamtumsatz (ohne Trinkgeld)</th>
+                                <th>Bargeld</th>
+                                <th>Trinkgeld</th>
+                                <th>Basis Auszahlung</th>
+                                <th>Finale Auszahlung</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results-body">
+                            <!-- Results will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fahrly</h3>
+                    <p>Professionelle Flottenmanagement Software für Mietwagen Unternehmer im DACH-Raum.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Produkte</h4>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Preise</a>
+                    <a href="#onboarding">Onboarding</a>
+                    <a href="tools.html">Tools</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Unternehmen</h3>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                    <a href="agb.html">AGB</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <a href="mailto:support@fahrly.de">support@fahrly.de</a>
+                    <p>Fahrly OÜ<br>Estonia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fahrly OÜ. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="tools.js"></script>
+</body>
+</html>
