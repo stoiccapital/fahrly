@@ -5,48 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum - Fahrly</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/legal.css">
+    <link rel="stylesheet" href="css/impressum.css">
+    <link rel="stylesheet" href="components/navbar/navbar.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
 </head>
 <body>
-    <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+    <!-- Navigation -->
+    <header class="header">
+        <!-- Desktop Navigation -->
+        <div class="container desktop-nav">
+            <nav class="nav">
+                <a href="index.html" class="logo">Fahrly</a>
+                <div class="nav-left">
+                    <a href="index.html#features" class="nav-link-blue desktop-link">Produkte</a>
+                    <a href="index.html#pricing" class="nav-link-blue desktop-link">Preise</a>
+                    <a href="tools/tools.html" class="nav-link-blue desktop-link">Tools</a>
+                </div>
+                <div class="nav-right">
+                    <a href="index.html#contact" class="nav-link-blue desktop-link nav-link-sales">Sales-Team kontaktieren</a>
+                    <a href="index.html#pricing" class="nav-link-blue desktop-link">Anmelden</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav-bar">
+            <a href="index.html" class="mobile-logo">Fahrly</a>
+            <button class="hamburger-menu" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="mobile-menu-close" aria-label="Menü schließen"></button>
+            <div class="mobile-menu-links">
+                <a href="index.html#features">Produkte</a>
+                <a href="index.html#pricing">Preise</a>
+                <a href="tools/tools.html">Tools</a>
+                <a href="index.html#contact" class="nav-link-sales">Sales-Team kontaktieren</a>
+                <a href="index.html#pricing">Anmelden</a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay"></div>
+    </header>
     
     <!-- Main Content -->
-    <h1>Impressum</h1>
+    <div class="impressum-container">
+        <div class="impressum-header">
+            <h1>Impressum</h1>
+            <p>Rechtliche Informationen und Unternehmensangaben</p>
+        </div>
+        
+        <div class="impressum-section">
+            <h2>Angaben gemäß § 5 TMG</h2>
+            <div class="company-info">
+                <p>
+                    <strong>Fahrly OÜ</strong><br>
+                    Harju maakond, Tallinn, Kesklinna linnaosa<br>
+                    Estonia<br>
+                    Registri number: [Registri number einfügen]
+                </p>
+            </div>
     
-    <h2>Angaben gemäß § 5 TMG</h2>
-    <p>
-        <strong>Fahrly OÜ</strong><br>
-        Harju maakond, Tallinn, Kesklinna linnaosa<br>
-        Estonia<br>
-        Registri number: [Registri number einfügen]
-    </p>
+        </div>
+        
+        <div class="impressum-section">
+            <h2>Vertreten durch</h2>
+            <div class="legal-info">
+                <p>Geschäftsführer: [Name des Geschäftsführers einfügen]</p>
+            </div>
+        </div>
+        
+        <div class="impressum-section">
+            <h2>Kontakt</h2>
+            <div class="contact-info">
+                <p>
+                    Telefon: [Telefonnummer einfügen]<br>
+                    E-Mail: <a href="mailto:support@fahrly.de">support@fahrly.de</a><br>
+                    Website: <a href="https://fahrly.de">https://fahrly.de</a>
+                </p>
+            </div>
     
-    <h2>Vertreten durch</h2>
-    <p>Geschäftsführer: [Name des Geschäftsführers einfügen]</p>
+        </div>
+        
+        <div class="impressum-section">
+            <h2>Umsatzsteuer-ID</h2>
+            <div class="tax-info">
+                <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: [EE-USt-IdNr. einfügen]</p>
+            </div>
+        </div>
+        
+        <div class="impressum-section">
+            <h2>Handelsregister</h2>
+            <div class="legal-info">
+                <p>Registergericht: [Registergericht einfügen]<br>
+                Registernummer: [Registernummer einfügen]</p>
+            </div>
     
-    <h2>Kontakt</h2>
-    <p>
-        Telefon: [Telefonnummer einfügen]<br>
-        E-Mail: support@fahrly.de<br>
-        Website: https://fahrly.de
-    </p>
-    
-    <h2>Umsatzsteuer-ID</h2>
-    <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: [EE-USt-IdNr. einfügen]</p>
-    
-    <h2>Handelsregister</h2>
-    <p>Registergericht: [Registergericht einfügen]<br>
-    Registernummer: [Registernummer einfügen]</p>
-    
-    <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
-    <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-    
-    <h2>Haftung für Inhalte</h2>
-    <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
-    
-    <h2>Urheberrecht</h2>
-    <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
-    
-    <p><em>Stand: Dezember 2024</em></p>
+        </div>
+        
+        <div class="impressum-section">
+            <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+            <div class="dispute-resolution">
+                <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+            </div>
+        </div>
+        
+        <div class="impressum-section">
+            <h2>Haftung für Inhalte</h2>
+            <div class="liability-section">
+                <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+            </div>
+        </div>
+        
+        <div class="impressum-section">
+            <h2>Urheberrecht</h2>
+            <div class="copyright-section">
+                <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            <p><em>Stand: Dezember 2024</em></p>
+        </div>
+    </div>
+
+    <!-- Footer Component -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript -->
+    <script src="components/navbar/navbar.js"></script>
+    <script src="components/footer/include-footer.js"></script>
 </body>
 </html> 

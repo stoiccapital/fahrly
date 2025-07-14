@@ -4,52 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fahrly - Gehaltsrechner</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="tools.css">
+    <link rel="stylesheet" href="../components/navbar/navbar.css">
+    <link rel="stylesheet" href="../components/footer/footer.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Navigation -->
     <header class="header">
-        <div class="container">
+        <!-- Desktop Navigation -->
+        <div class="container desktop-nav">
             <nav class="nav">
-                <a href="index.html" class="logo">Fahrly</a>
+                <a href="../index.html" class="logo">Fahrly</a>
                 <div class="nav-left">
-                    <a href="index.html#features" class="nav-link-blue desktop-link">Produkte</a>
-                    <a href="index.html#pricing" class="nav-link-blue desktop-link">Preise</a>
+                    <a href="../index.html#features" class="nav-link-blue desktop-link">Produkte</a>
+                    <a href="../index.html#pricing" class="nav-link-blue desktop-link">Preise</a>
                     <a href="tools.html" class="nav-link-blue desktop-link">Tools</a>
                 </div>
                 <div class="nav-right">
-                    <a href="index.html#contact" class="nav-link-blue desktop-link nav-link-sales">Sales-Team kontaktieren</a>
-                    <a href="index.html#pricing" class="nav-link-blue desktop-link">Anmelden</a>
+                    <a href="../index.html#contact" class="nav-link-blue desktop-link nav-link-sales">Sales-Team kontaktieren</a>
+                    <a href="../index.html#pricing" class="nav-link-blue desktop-link">Anmelden</a>
                 </div>
             </nav>
         </div>
-    </header>
-    
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav-bar">
-        <a href="index.html" class="mobile-logo">Fahrly</a>
-        <button class="hamburger-menu" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
 
-    <!-- Mobile Menu Panel -->
-    <div class="mobile-menu" id="mobile-menu">
-        <button class="mobile-menu-close" aria-label="Menü schließen"></button>
-        <div class="mobile-menu-links">
-            <a href="index.html#features">Produkte</a>
-            <a href="index.html#pricing">Preise</a>
-            <a href="tools.html">Tools</a>
-            <a href="index.html#contact" class="nav-link-sales">Sales-Team kontaktieren</a>
-            <a href="index.html#pricing">Anmelden</a>
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav-bar">
+            <a href="../index.html" class="mobile-logo">Fahrly</a>
+            <button class="hamburger-menu" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </div>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay"></div>
+        <!-- Mobile Menu Panel -->
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="mobile-menu-close" aria-label="Menü schließen"></button>
+            <div class="mobile-menu-links">
+                <a href="../index.html#features">Produkte</a>
+                <a href="../index.html#pricing">Preise</a>
+                <a href="tools.html">Tools</a>
+                <a href="../index.html#contact" class="nav-link-sales">Sales-Team kontaktieren</a>
+                <a href="../index.html#pricing">Anmelden</a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay"></div>
+    </header>
 
     <!-- Main Content -->
     <main class="section-container">
@@ -140,40 +143,11 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Fahrly</h3>
-                    <p>Professionelle Flottenmanagement Software für Mietwagen Unternehmer im DACH-Raum.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Produkte</h4>
-                    <a href="#features">Features</a>
-                    <a href="#pricing">Preise</a>
-                    <a href="#onboarding">Onboarding</a>
-                    <a href="tools.html">Tools</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Unternehmen</h3>
-                    <a href="impressum.html">Impressum</a>
-                    <a href="datenschutz.html">Datenschutz</a>
-                    <a href="agb.html">AGB</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Kontakt</h3>
-                    <a href="mailto:support@fahrly.de">support@fahrly.de</a>
-                    <p>Fahrly OÜ<br>Estonia</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Fahrly OÜ. Alle Rechte vorbehalten.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Component -->
+    <div id="footer-container"></div>
 
-    <script src="js/main.js"></script>
+    <script src="../components/navbar/navbar.js"></script>
+    <script src="../components/footer/include-footer.js"></script>
     <script src="tools.js"></script>
 </body>
 </html>

@@ -5,74 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGB - Fahrly</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/legal.css">
+    <link rel="stylesheet" href="css/agb.css">
+    <link rel="stylesheet" href="components/navbar/navbar.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
 </head>
 <body>
-    <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+    <!-- Navigation -->
+    <header class="header">
+        <!-- Desktop Navigation -->
+        <div class="container desktop-nav">
+            <nav class="nav">
+                <a href="index.html" class="logo">Fahrly</a>
+                <div class="nav-left">
+                    <a href="index.html#features" class="nav-link-blue desktop-link">Produkte</a>
+                    <a href="index.html#pricing" class="nav-link-blue desktop-link">Preise</a>
+                    <a href="tools/tools.html" class="nav-link-blue desktop-link">Tools</a>
+                </div>
+                <div class="nav-right">
+                    <a href="index.html#contact" class="nav-link-blue desktop-link nav-link-sales">Sales-Team kontaktieren</a>
+                    <a href="index.html#pricing" class="nav-link-blue desktop-link">Anmelden</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav-bar">
+            <a href="index.html" class="mobile-logo">Fahrly</a>
+            <button class="hamburger-menu" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="mobile-menu-close" aria-label="Menü schließen"></button>
+            <div class="mobile-menu-links">
+                <a href="index.html#features">Produkte</a>
+                <a href="index.html#pricing">Preise</a>
+                <a href="tools/tools.html">Tools</a>
+                <a href="index.html#contact" class="nav-link-sales">Sales-Team kontaktieren</a>
+                <a href="index.html#pricing">Anmelden</a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay"></div>
+    </header>
     
     <!-- Main Content -->
+    <div class="agb-container">
+        <div class="agb-header">
+            <h1>Allgemeine Geschäftsbedingungen</h1>
+            <p>Rechtliche Bedingungen für die Nutzung der Fahrly Flottenmanagement Software</p>
+        </div>
+        
+        <div class="agb-section">
+            <h2>§ 1 Geltungsbereich</h2>
+            <div class="scope-section">
+                <p>Diese Allgemeinen Geschäftsbedingungen gelten für die Nutzung der Flottenmanagement-Software "Fahrly" der Fahrly OÜ, Estonia. Durch die Nutzung unserer Dienste akzeptieren Sie diese Bedingungen vollständig.</p>
+            </div>
     
-    <h1>Allgemeine Geschäftsbedingungen</h1>
+        </div>
+        
+        <div class="agb-section">
+            <h2>§ 2 Leistungsbeschreibung</h2>
+            <div class="service-description">
+                <p>Fahrly bietet eine SaaS-Lösung für Flottenmanagement mit folgenden Hauptfunktionen:</p>
+                <ul>
+                    <li>Auto-Dispatch (automatische Fahrtenzuweisung)</li>
+                    <li>Tagesreports und Auswertungen</li>
+                    <li>Fahrzeugverwaltung</li>
+                    <li>Fahrergehälter & Bonuslogik</li>
+                    <li>API-Zugang (nur Team-Plan)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="agb-section">
+            <h2>§ 3 Vertragsschluss</h2>
+            <div class="contract-formation">
+                <p>Der Vertrag kommt durch die Registrierung auf unserer Website und die Bestätigung der AGB zustande. Die Registrierung erfolgt durch Ausfüllen des Registrierungsformulars und Bestätigung per E-Mail.</p>
+            </div>
     
-    <h2>§ 1 Geltungsbereich</h2>
-    <p>Diese Allgemeinen Geschäftsbedingungen gelten für die Nutzung der Flottenmanagement-Software "Fahrly" der Fahrly OÜ, Estonia. Durch die Nutzung unserer Dienste akzeptieren Sie diese Bedingungen vollständig.</p>
+        </div>
+        
+        <div class="agb-section">
+            <h2>§ 4 Preise und Zahlungsbedingungen</h2>
+            <div class="pricing-section">
+                <p><strong>Preise:</strong></p>
+                <ul>
+                    <li>Solo-Plan: 30€ pro Monat (bis zu 3 Fahrzeuge)</li>
+                    <li>Team-Plan: 50€ pro Monat (bis zu 10 Fahrzeuge)</li>
+                </ul>
+                <p><strong>Zahlung:</strong> Die Rechnungen werden monatlich im Voraus per SEPA-Lastschrift oder Kreditkarte abgebucht. Alle Preise verstehen sich in Euro inklusive der gesetzlichen Mehrwertsteuer.</p>
+            </div>
+        </div>
+        
+        <div class="agb-section">
+            <h2>§ 5 Nutzungsrechte</h2>
+            <div class="user-rights">
+                <p>Wir gewähren Ihnen ein nicht-exklusives, nicht übertragbares Recht zur Nutzung der Fahrly-Software für die Dauer des Vertrags. Die Nutzung ist auf die vereinbarte Anzahl von Fahrzeugen beschränkt.</p>
+            </div>
     
-    <h2>§ 2 Leistungsbeschreibung</h2>
-    <p>Fahrly bietet eine SaaS-Lösung für Flottenmanagement mit folgenden Hauptfunktionen:</p>
-    <ul>
-        <li>Auto-Dispatch (automatische Fahrtenzuweisung)</li>
-        <li>Tagesreports und Auswertungen</li>
-        <li>Fahrzeugverwaltung</li>
-        <li>Fahrergehälter & Bonuslogik</li>
-        <li>API-Zugang (nur Team-Plan)</li>
-    </ul>
+        </div>
+        
+        <div class="agb-section">
+            <h2>§ 6 Pflichten des Nutzers</h2>
+            <div class="user-obligations">
+                <p>Sie verpflichten sich:</p>
+                <ul>
+                    <li>Die Zugangsdaten geheim zu halten</li>
+                    <li>Die Software nur für den bestimmungsgemäßen Zweck zu nutzen</li>
+                    <li>Keine rechtswidrigen Inhalte zu verarbeiten</li>
+                    <li>Uns über Sicherheitsverstöße zu informieren</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="agb-section">
+            <h2>§ 7 Verfügbarkeit</h2>
+            <div class="availability-section">
+                <p>Wir bemühen uns um eine Verfügbarkeit von 99,5% im Monatsdurchschnitt. Geplante Wartungsarbeiten werden mindestens 24 Stunden vorher angekündigt.</p>
+            </div>
+        </div>
+        
+        <div class="agb-section">
+            <h2>§ 8 Datenschutz</h2>
+            <div class="data-protection">
+                <p>Die Verarbeitung personenbezogener Daten erfolgt gemäß unserer Datenschutzerklärung und den geltenden Datenschutzgesetzen (DSGVO).</p>
+            </div>
+        </div>
+        
+        <div class="agb-section">
+            <h2>§ 9 Haftung</h2>
+            <div class="liability-section">
+                <p>Wir haften für Vorsatz und grobe Fahrlässigkeit. Für leichte Fahrlässigkeit haften wir nur bei Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit. Die Haftung für indirekte Schäden ist ausgeschlossen.</p>
+            </div>
     
-    <h2>§ 3 Vertragsschluss</h2>
-    <p>Der Vertrag kommt durch die Registrierung auf unserer Website und die Bestätigung der AGB zustande. Die Registrierung erfolgt durch Ausfüllen des Registrierungsformulars und Bestätigung per E-Mail.</p>
-    
-    <h2>§ 4 Preise und Zahlungsbedingungen</h2>
-    <p><strong>Preise:</strong></p>
-    <ul>
-        <li>Solo-Plan: 30€ pro Monat (bis zu 3 Fahrzeuge)</li>
-        <li>Team-Plan: 50€ pro Monat (bis zu 10 Fahrzeuge)</li>
-    </ul>
-    <p><strong>Zahlung:</strong> Die Rechnungen werden monatlich im Voraus per SEPA-Lastschrift oder Kreditkarte abgebucht. Alle Preise verstehen sich in Euro inklusive der gesetzlichen Mehrwertsteuer.</p>
-    
-    <h2>§ 5 Nutzungsrechte</h2>
-    <p>Wir gewähren Ihnen ein nicht-exklusives, nicht übertragbares Recht zur Nutzung der Fahrly-Software für die Dauer des Vertrags. Die Nutzung ist auf die vereinbarte Anzahl von Fahrzeugen beschränkt.</p>
-    
-    <h2>§ 6 Pflichten des Nutzers</h2>
-    <p>Sie verpflichten sich:</p>
-    <ul>
-        <li>Die Zugangsdaten geheim zu halten</li>
-        <li>Die Software nur für den bestimmungsgemäßen Zweck zu nutzen</li>
-        <li>Keine rechtswidrigen Inhalte zu verarbeiten</li>
-        <li>Uns über Sicherheitsverstöße zu informieren</li>
-    </ul>
-    
-    <h2>§ 7 Verfügbarkeit</h2>
-    <p>Wir bemühen uns um eine Verfügbarkeit von 99,5% im Monatsdurchschnitt. Geplante Wartungsarbeiten werden mindestens 24 Stunden vorher angekündigt.</p>
-    
-    <h2>§ 8 Datenschutz</h2>
-    <p>Die Verarbeitung personenbezogener Daten erfolgt gemäß unserer Datenschutzerklärung und den geltenden Datenschutzgesetzen (DSGVO).</p>
-    
-    <h2>§ 9 Haftung</h2>
-    <p>Wir haften für Vorsatz und grobe Fahrlässigkeit. Für leichte Fahrlässigkeit haften wir nur bei Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit. Die Haftung für indirekte Schäden ist ausgeschlossen.</p>
-    
-    <h2>§ 10 Kündigung</h2>
-    <p>Der Vertrag kann von beiden Seiten mit einer Frist von 30 Tagen zum Monatsende gekündigt werden. Die Kündigung erfolgt schriftlich oder per E-Mail an support@fahrly.de.</p>
-    
-    <h2>§ 11 Schlussbestimmungen</h2>
-    <p>Es gilt das Recht der Republik Estland. Gerichtsstand ist Tallinn, Estland. Sollten einzelne Bestimmungen unwirksam sein, bleibt der Vertrag im Übrigen wirksam.</p>
-    
-    <h2>§ 12 Kontakt</h2>
-    <p>Bei Fragen zu diesen AGB wenden Sie sich bitte an:</p>
-    <p>
-        Fahrly OÜ<br>
-        E-Mail: support@fahrly.de<br>
-        Website: https://fahrly.de
-    </p>
-    
-    <p><em>Stand: Dezember 2024</em></p>
+        </div>
+        
+        <div class="agb-section">
+            <h2>§ 10 Kündigung</h2>
+            <div class="termination-section">
+                <p>Der Vertrag kann von beiden Seiten mit einer Frist von 30 Tagen zum Monatsende gekündigt werden. Die Kündigung erfolgt schriftlich oder per E-Mail an <a href="mailto:support@fahrly.de">support@fahrly.de</a>.</p>
+            </div>
+        </div>
+        
+        <div class="agb-section">
+            <h2>§ 11 Schlussbestimmungen</h2>
+            <div class="final-provisions">
+                <p>Es gilt das Recht der Republik Estland. Gerichtsstand ist Tallinn, Estland. Sollten einzelne Bestimmungen unwirksam sein, bleibt der Vertrag im Übrigen wirksam.</p>
+            </div>
+        </div>
+        
+        <div class="agb-section">
+            <h2>§ 12 Kontakt</h2>
+            <p>Bei Fragen zu diesen AGB wenden Sie sich bitte an:</p>
+            <div class="contact-info">
+                <p>
+                    Fahrly OÜ<br>
+                    E-Mail: <a href="mailto:support@fahrly.de">support@fahrly.de</a><br>
+                    Website: <a href="https://fahrly.de">https://fahrly.de</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            <p><em>Stand: Dezember 2024</em></p>
+        </div>
+    </div>
+
+    <!-- Footer Component -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript -->
+    <script src="components/navbar/navbar.js"></script>
+    <script src="components/footer/include-footer.js"></script>
 </body>
 </html> 

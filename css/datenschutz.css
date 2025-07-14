@@ -1,0 +1,275 @@
+/* Datenschutz Page Styles */
+
+/* Main Content Container */
+.datenschutz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    line-height: 1.6;
+    color: #374151;
+    margin-top: 80px; /* Account for fixed navbar */
+}
+
+/* Page Header */
+.datenschutz-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.datenschutz-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #1877F2, #0ea5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.datenschutz-header p {
+    font-size: 1.125rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Section Styling */
+.datenschutz-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.datenschutz-section:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.datenschutz-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #1877F2;
+    position: relative;
+}
+
+.datenschutz-section h2::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, #1877F2, #0ea5e9);
+}
+
+.datenschutz-section h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #374151;
+    margin: 1.5rem 0 1rem 0;
+}
+
+/* Paragraph Styling */
+.datenschutz-section p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #4b5563;
+}
+
+.datenschutz-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* List Styling */
+.datenschutz-section ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.datenschutz-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: #4b5563;
+    position: relative;
+}
+
+.datenschutz-section li::marker {
+    color: #1877F2;
+    font-weight: 600;
+}
+
+/* Contact Information */
+.contact-info {
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+    border-left: 4px solid #1877F2;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+.contact-info a {
+    color: #1877F2;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #0ea5e9;
+    text-decoration: underline;
+}
+
+/* Company Information */
+.company-info {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border: 1px solid #e2e8f0;
+}
+
+.company-info strong {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+/* Rights Section */
+.rights-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.rights-section li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.rights-section li:last-child {
+    border-bottom: none;
+}
+
+.rights-section li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Data Collection Section */
+.data-collection {
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+    border: 1px solid #bae6fd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.data-collection h3 {
+    color: #0369a1;
+    margin-top: 0;
+}
+
+/* Security Section */
+.security-section {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    border: 1px solid #fbbf24;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.security-section h3 {
+    color: #92400e;
+    margin-top: 0;
+}
+
+/* Footer Note */
+.footer-note {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f9fafb;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.footer-note em {
+    color: #6b7280;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .datenschutz-container {
+        padding: 1rem;
+    }
+    
+    .datenschutz-header h1 {
+        font-size: 2rem;
+    }
+    
+    .datenschutz-section {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .datenschutz-section h2 {
+        font-size: 1.25rem;
+    }
+    
+    .datenschutz-section h3 {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .datenschutz-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .datenschutz-section {
+        padding: 1rem;
+    }
+    
+    .contact-info,
+    .company-info,
+    .data-collection,
+    .security-section {
+        padding: 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .datenschutz-section {
+        box-shadow: none;
+        border: 1px solid #000;
+        page-break-inside: avoid;
+    }
+    
+    .datenschutz-header h1 {
+        background: none;
+        -webkit-text-fill-color: #000;
+        color: #000;
+    }
+}

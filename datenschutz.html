@@ -5,75 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutz - Fahrly</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/legal.css">
+    <link rel="stylesheet" href="css/datenschutz.css">
+    <link rel="stylesheet" href="components/navbar/navbar.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
 </head>
 <body>
-    <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+    <!-- Navigation -->
+    <header class="header">
+        <!-- Desktop Navigation -->
+        <div class="container desktop-nav">
+            <nav class="nav">
+                <a href="index.html" class="logo">Fahrly</a>
+                <div class="nav-left">
+                    <a href="index.html#features" class="nav-link-blue desktop-link">Produkte</a>
+                    <a href="index.html#pricing" class="nav-link-blue desktop-link">Preise</a>
+                    <a href="tools/tools.html" class="nav-link-blue desktop-link">Tools</a>
+                </div>
+                <div class="nav-right">
+                    <a href="index.html#contact" class="nav-link-blue desktop-link nav-link-sales">Sales-Team kontaktieren</a>
+                    <a href="index.html#pricing" class="nav-link-blue desktop-link">Anmelden</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav-bar">
+            <a href="index.html" class="mobile-logo">Fahrly</a>
+            <button class="hamburger-menu" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="mobile-menu-close" aria-label="Menü schließen"></button>
+            <div class="mobile-menu-links">
+                <a href="index.html#features">Produkte</a>
+                <a href="index.html#pricing">Preise</a>
+                <a href="tools/tools.html">Tools</a>
+                <a href="index.html#contact" class="nav-link-sales">Sales-Team kontaktieren</a>
+                <a href="index.html#pricing">Anmelden</a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay"></div>
+    </header>
     
-    <h1>Datenschutzerklärung</h1>
+    <div class="datenschutz-container">
+        <div class="datenschutz-header">
+            <h1>Datenschutzerklärung</h1>
+            <p>Transparenz und Vertrauen in den Umgang mit Ihren personenbezogenen Daten</p>
+        </div>
+        
+        <div class="datenschutz-section">
+            <h2>1. Datenschutz auf einen Blick</h2>
+            
+            <h3>Allgemeine Hinweise</h3>
+            <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+            
+            <div class="data-collection">
+                <h3>Datenerfassung auf dieser Website</h3>
+                <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br>
+                Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt "Hinweis zur Verantwortlichen Stelle" in dieser Datenschutzerklärung entnehmen.</p>
+            </div>
     
-    <h2>1. Datenschutz auf einen Blick</h2>
+        </div>
+        
+        <div class="datenschutz-section">
+            <h2>2. Verantwortliche Stelle</h2>
+            <div class="company-info">
+                <p>
+                    <strong>Fahrly OÜ</strong><br>
+                    Harju maakond, Tallinn, Kesklinna linnaosa<br>
+                    Estonia<br>
+                    E-Mail: support@fahrly.de<br>
+                    Website: https://fahrly.de
+                </p>
+            </div>
     
-    <h3>Allgemeine Hinweise</h3>
-    <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+        </div>
+        
+        <div class="datenschutz-section">
+            <h2>3. Ihre Rechte</h2>
+            <p>Sie haben folgende Rechte:</p>
+            <div class="rights-section">
+                <ul>
+                    <li>Recht auf Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten</li>
+                    <li>Recht auf Berichtigung unrichtiger oder unvollständiger Daten</li>
+                    <li>Recht auf Löschung Ihrer bei uns gespeicherten Daten</li>
+                    <li>Recht auf Einschränkung der Datenverarbeitung</li>
+                    <li>Recht auf Datenübertragbarkeit</li>
+                    <li>Widerspruchsrecht gegen die Verarbeitung Ihrer Daten bei uns</li>
+                    <li>Recht auf Beschwerde bei einer Aufsichtsbehörde</li>
+                </ul>
+            </div>
     
-    <h3>Datenerfassung auf dieser Website</h3>
-    <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br>
-    Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt "Hinweis zur Verantwortlichen Stelle" in dieser Datenschutzerklärung entnehmen.</p>
+        </div>
+        
+        <div class="datenschutz-section">
+            <h2>4. Datenerfassung auf unserer Website</h2>
+            
+            <h3>Cookies</h3>
+            <p>Unsere Website verwendet Cookies. Das sind kleine Textdateien, die Ihr Webbrowser auf Ihrem Endgerät speichert. Cookies helfen uns dabei, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen.</p>
+            
+            <h3>Server-Log-Dateien</h3>
+            <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
+            <ul>
+                <li>Browsertyp und Browserversion</li>
+                <li>verwendetes Betriebssystem</li>
+                <li>Referrer URL</li>
+                <li>Hostname des zugreifenden Rechners</li>
+                <li>Uhrzeit der Serveranfrage</li>
+                <li>IP-Adresse</li>
+            </ul>
     
-    <h2>2. Verantwortliche Stelle</h2>
-    <p>
-        <strong>Fahrly OÜ</strong><br>
-        Harju maakond, Tallinn, Kesklinna linnaosa<br>
-        Estonia<br>
-        E-Mail: support@fahrly.de<br>
-        Website: https://fahrly.de
-    </p>
+        </div>
+        
+        <div class="datenschutz-section">
+            <h2>5. Analyse-Tools und Tools von Drittanbietern</h2>
+            <p>Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem mit sogenannten Analyseprogrammen.</p>
+        </div>
+        
+        <div class="datenschutz-section">
+            <h2>6. Datensicherheit</h2>
+            <div class="security-section">
+                <p>Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL-bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von "http://" auf "https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+            </div>
     
-    <h2>3. Ihre Rechte</h2>
-    <p>Sie haben folgende Rechte:</p>
-    <ul>
-        <li>Recht auf Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten</li>
-        <li>Recht auf Berichtigung unrichtiger oder unvollständiger Daten</li>
-        <li>Recht auf Löschung Ihrer bei uns gespeicherten Daten</li>
-        <li>Recht auf Einschränkung der Datenverarbeitung</li>
-        <li>Recht auf Datenübertragbarkeit</li>
-        <li>Widerspruchsrecht gegen die Verarbeitung Ihrer Daten bei uns</li>
-        <li>Recht auf Beschwerde bei einer Aufsichtsbehörde</li>
-    </ul>
-    
-    <h2>4. Datenerfassung auf unserer Website</h2>
-    
-    <h3>Cookies</h3>
-    <p>Unsere Website verwendet Cookies. Das sind kleine Textdateien, die Ihr Webbrowser auf Ihrem Endgerät speichert. Cookies helfen uns dabei, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen.</p>
-    
-    <h3>Server-Log-Dateien</h3>
-    <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
-    <ul>
-        <li>Browsertyp und Browserversion</li>
-        <li>verwendetes Betriebssystem</li>
-        <li>Referrer URL</li>
-        <li>Hostname des zugreifenden Rechners</li>
-        <li>Uhrzeit der Serveranfrage</li>
-        <li>IP-Adresse</li>
-    </ul>
-    
-    <h2>5. Analyse-Tools und Tools von Drittanbietern</h2>
-    <p>Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem mit sogenannten Analyseprogrammen.</p>
-    
-    <h2>6. Datensicherheit</h2>
-    <p>Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL-bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von "http://" auf "https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
-    
-    <h2>7. Änderungen</h2>
-    <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services.</p>
-    
-    <h2>8. Kontakt</h2>
-    <p>Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten wenden Sie sich bitte an:</p>
-    <p>
-        E-Mail: support@fahrly.de<br>
-        Datenschutzbeauftragter: [Kontaktdaten des DSB einfügen]
-    </p>
-    
-    <p><em>Stand: Dezember 2024</em></p>
+        </div>
+        
+        <div class="datenschutz-section">
+            <h2>7. Änderungen</h2>
+            <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services.</p>
+        </div>
+        
+        <div class="datenschutz-section">
+            <h2>8. Kontakt</h2>
+            <p>Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten wenden Sie sich bitte an:</p>
+            <div class="contact-info">
+                <p>
+                    E-Mail: <a href="mailto:support@fahrly.de">support@fahrly.de</a><br>
+                    Datenschutzbeauftragter: [Kontaktdaten des DSB einfügen]
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            <p><em>Stand: Dezember 2024</em></p>
+        </div>
+    </div>
+
+    <!-- Footer Component -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript -->
+    <script src="components/navbar/navbar.js"></script>
+    <script src="components/footer/include-footer.js"></script>
 </body>
 </html> 
