@@ -28,6 +28,57 @@
     color: var(--text-primary);
   }
   
+  /* ===== TRUSTED BRANDS SECTION ===== */
+  .trusted-brands-section {
+    background: var(--background);
+    padding: var(--spacing-3xl) 0;
+  }
+  
+  .trusted-brands-section .section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--text-primary);
+  }
+  
+  .trusted-brands-section .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xl);
+    align-items: center;
+    justify-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .trusted-brands-section .brand-logo {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: var(--font-size-sm);
+    text-align: center;
+    width: 100%;
+    transition: color var(--transition-base);
+    padding: var(--spacing-md);
+  }
+  
+  .trusted-brands-section .brand-logo:hover {
+    color: var(--text-secondary);
+  }
+  
+  /* Responsive brand grid */
+  @media (max-width: 768px) {
+    .trusted-brands-section .brands-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--spacing-lg);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .trusted-brands-section .brands-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+    }
+  }
+  
   /* ===== PROBLEM & SOLUTION SECTION ===== */
   .problem-solution {
     background: var(--background);

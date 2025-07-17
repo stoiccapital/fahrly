@@ -1,5 +1,8 @@
 /* Main CSS - Imports all modular components */
 
+/* Fonts - Load first for optimal performance */
+@import url('fonts.css');
+
 /* Critical CSS - Load immediately */
 @import url('critical.css');
 

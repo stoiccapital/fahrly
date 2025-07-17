@@ -24,21 +24,22 @@
 /* Desktop Layout */
 @media (min-width: 1024px) {
   .hero .container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--spacing-3xl);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--spacing-2xl);
     padding: 0 var(--spacing-2xl);
+    text-align: left;
   }
 
   .hero-content {
-    flex: 0 1 600px;
-    max-width: 600px;
+    flex: 0 1 auto;
+    max-width: 800px;
+    width: 100%;
   }
 
   .hero-image {
-    flex: 0 1 500px;
-    max-width: 500px;
+    display: none;
   }
 }
 
@@ -50,7 +51,7 @@
 
   .hero-content {
     max-width: 80%;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
@@ -81,27 +82,29 @@
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  line-height: 1.2;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
   letter-spacing: -0.02em;
 }
 
 .hero p {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  line-height: 1.6;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  line-height: 1.5;
   color: var(--text-secondary);
-  margin-bottom: var(--spacing-2xl);
-  max-width: 90%;
+  margin-bottom: var(--spacing-xl);
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Email Signup Form */
 .email-signup {
   width: 100%;
-  max-width: 420px;
-  margin: var(--spacing-lg) 0;
+  max-width: 400px;
+  margin: var(--spacing-md) 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -129,7 +132,7 @@
   flex: 1;
   padding: 0 1.25rem;
   border: none;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   outline: none;
   background: transparent;
   color: var(--text-primary);
@@ -139,13 +142,13 @@
 
 .email-input-group input[type="email"]::placeholder {
   color: var(--text-muted);
-  font-size: 0.9375rem;
+  font-size: 1rem;
 }
 
 .email-input-group .cta-button {
   margin: 2px;
   padding: 0 1.25rem;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   border-radius: 18px;
   display: flex;
   align-items: center;
@@ -166,9 +169,12 @@
 
 .signup-note {
   margin-top: var(--spacing-xs);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   color: var(--text-secondary);
   padding-left: var(--spacing-sm);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Mobile Optimization */
@@ -197,40 +203,7 @@
   }
 }
 
-/* Trusted Brands Section */
-.trusted-brands {
-  margin-top: var(--spacing-2xl);
-  width: 100%;
-}
 
-.brands-subtitle {
-  font-size: var(--font-size-sm);
-  color: var(--text-secondary);
-  margin-bottom: var(--spacing-xl);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.brands-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: var(--spacing-xl);
-  align-items: center;
-  justify-items: center;
-}
-
-.brand-logo {
-  color: var(--text-muted);
-  font-weight: 500;
-  font-size: var(--font-size-sm);
-  text-align: center;
-  width: 100%;
-  transition: color var(--transition-base);
-}
-
-.brand-logo:hover {
-  color: var(--text-secondary);
-}
 
 /* Animation Classes */
 .fade-in {
