@@ -172,9 +172,18 @@
   font-size: 0.875rem;
   color: var(--text-secondary);
   padding-left: var(--spacing-sm);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.4;
+}
+
+/* Mobile optimization for signup note */
+@media (max-width: 480px) {
+  .signup-note {
+    font-size: 0.8125rem;
+    padding-left: 0;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+  }
 }
 
 /* Hero CTA Button - Wider and Slimmer */
