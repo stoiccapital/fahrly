@@ -177,6 +177,14 @@
   text-overflow: ellipsis;
 }
 
+/* Hero CTA Button - Wider and Slimmer */
+.hero .cta-button.black {
+  width: 280px;
+  height: 36px;
+  padding: 0 1.5rem;
+  justify-content: center;
+}
+
 /* Mobile Optimization */
 @media (max-width: 480px) {
   .email-signup {
